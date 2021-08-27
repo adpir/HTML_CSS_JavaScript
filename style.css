@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital@1&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #304b66;
+  font-family: 'Tinos', serif;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.navbar {
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+  font-size: 18px;
+  /* around the navbar */
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: rgba(225, 225, 225, 0.7);
+}
+.main-nav li {
+  text-align: center;
+  /* margin provides more espacio entre las lineas */
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(46, 217, 217, 0.8);
+  font-size: 24px;
+}
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+.active {
+  display: block;
+}
+
+.banner {
+  /* padding: 10px;
+   */
+  /* min-width: 100%; */
+  border-radius: 0 10px 10px 10;
+  background: linear-gradient(180deg, #008aff, #ff137d), url('c.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  background-blend-mode: screen;
+  padding: 100px;
+}
+.waves {
+  position: absolute;
+  bottom: 0;
+  width: 300%;
+  /* padding is top 0 right 0 botton 0 left 0 */
+  margin: 2px 1em 0 auto;
+  padding: 20 30px 0 20px;
+  left: 0;
+  /* margin: 40px 0 30px; */
+}
+.container .waves {
+  margin: 50px 20 0px 20px;
+  width: 100;
+  position: absolute;
+  /* width: 100;
+  height: 100vh; */
+  /* border-radius: 0 0 10px 10px; */
+}
+
+h1 {
+  justify-content: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: rgb(146, 39, 119);
+  font-weight: bold;
+  font-size: 35px;
+  margin: 0 0 40px;
+}
+span {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+.container h1 span {
+  color: hsl(193, 45%, 56%);
+  margin: auto;
+  /* to move the container we need to add some margin and padding as well to the left, right, bottom */
+  padding: 0 20px 0 25px;
+  text-align: center;
+  justify-content: center;
+  display: inline-block;
+}
+.container {
+  width: 100;
+  margin: auto;
+}
+/*
+margins is top 0 right 0 botton 0 left 0
+  */
+/* margin: 0 0 10px 0;
+  padding: auto; */
+/* to move the container we need to add some margin and padding as well to the left, right, bottom */
+
+h2 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  color: rgb(146, 39, 119);
+  font-weight: bold;
+  font-size: 50px;
+}
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+}
+/* .card {
+  display: flex;
+  background-color: red;
+
+  border-radius: 0 0 10px 10px;
+}
+.content {
+  position: absolute;
+  margin: 50px 20px;
+  /* to move the container we need to add some margin and padding as well to the left, right, bottom */
+
+@media (min-width: 992px) {
+  .banner {
+    background: linear-gradient(180deg, #008aff, #ff137d), url('c.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    background-blend-mode: screen;
+    padding: 100px;
+  }
+  h1 {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-style: italic;
+    font-size: 40px;
+    margin: 100px;
+    padding: 20px;
+  }
+  .banner .waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+/* desktop part media queries  */
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .main-nav li {
+    margin: 0;
+  }
+  .nav-links {
+    margin-left: 40px;
+  }
+  .logo {
+    margin-top: 0;
+  }
+  .navbar-toggle {
+    display: none;
+  }
+  .logo:hover,
+  .nav-links:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+  /* .banner {
+    background: linear-gradient(180deg, #008aff, #ff137d), url('c.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    background-blend-mode: screen;
+    padding: 100px;
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-style: italic;
+    font-size: 40px;
+    margin: 40px 0 0 0;
+    padding: 0 0 20px 20;
+  }
+  .banner .waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100;
+  } */
+}
